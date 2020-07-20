@@ -14,6 +14,7 @@
 		CCEA54EB24BF54E7004D1962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEA54E924BF54E7004D1962 /* Main.storyboard */; };
 		CCEA54F724BF54E7004D1962 /* SE_Message_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA54F624BF54E7004D1962 /* SE_Message_TestTests.swift */; };
 		CCEA550224BF54E7004D1962 /* SE_Message_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA550124BF54E7004D1962 /* SE_Message_TestUITests.swift */; };
+		CCEAD4DF24C09A6000DE027D /* keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEAD4DE24C09A6000DE027D /* keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CCEA54FD24BF54E7004D1962 /* SE-Message-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SE-Message-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEA550124BF54E7004D1962 /* SE_Message_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SE_Message_TestUITests.swift; sourceTree = "<group>"; };
 		CCEA550324BF54E7004D1962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEAD4DE24C09A6000DE027D /* keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				CCEA54E024BF54E5004D1962 /* AppDelegate.swift */,
 				CCEA54E224BF54E5004D1962 /* ContentView.swift */,
+				CCEAD4DE24C09A6000DE027D /* keys.swift */,
 				CCEA54E424BF54E7004D1962 /* Assets.xcassets */,
 				CCEA54E924BF54E7004D1962 /* Main.storyboard */,
 				CCEA54EC24BF54E7004D1962 /* Info.plist */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEAD4DF24C09A6000DE027D /* keys.swift in Sources */,
 				CCEA54E324BF54E5004D1962 /* ContentView.swift in Sources */,
 				CCEA54E124BF54E5004D1962 /* AppDelegate.swift in Sources */,
 			);
