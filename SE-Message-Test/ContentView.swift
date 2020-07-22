@@ -33,14 +33,16 @@ struct InboxItem: View {
                 .bold()  
         }
         .background(SelectColor.opacity(0.5))
-        //.background(KeyEventHandling())
         .onLongPressGesture {
             self.SelectColor = .blue
-            self.showSafari = true
-            print("nu preview laten zien. id = \(self.MesgId)")
+            self.showSafari.toggle()
+
             self.sheet(isPresented: self.$showSafari) {
                 SafariPreview(site: self.MesgUrl)
             }
+        }
+        .popover(isPresented: self.$showSafari) {
+            SafariPreview()
         }
     }
 
@@ -48,11 +50,11 @@ struct InboxItem: View {
 }
 
 struct SafariPreview: View {
-    @state var site: String
-    var body: some View {
-        Rectangle()
-        .size(width: 300, height: 200)
-            .background(Color.red)
+   var body: some View {
+        VStack {
+            Text("Display the webpage here")
+            .padding()
+        }.frame(maxWidth: 533, maxHeight: 300)
     }
 
 }
